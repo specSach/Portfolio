@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Портфолио фронтенд-разработчика Романа">
+  <meta name="theme-color" content="#516acc">
+  <title>Портфолио | Роман - Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- Фоновые элементы для интерактива -->
+  <div class="background-effects">
+    <div class="particle" data-particle="1"></div>
+    <div class="particle" data-particle="2"></div>
+    <div class="particle" data-particle="3"></div>
+    <div class="particle" data-particle="4"></div>
+    <div class="particle" data-particle="5"></div>
+    <div class="particle" data-particle="6"></div>
+    <div class="particle" data-particle="7"></div>
+  </div>
+
+  <!-- Эффект свечения -->
+  <div class="glow-effect"></div>
+
+  <!-- Переключатель темы -->
+  <button class="theme-toggle" aria-label="Переключить тему" title="Сменить тему">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <span class="theme-toggle-circle"></span>
+  </button>
+
+  <!-- Основной контент -->
+  <main class="main-content">
+    <!-- Карточка профиля -->
+    <article class="card" data-state="#about">
+      <header class="card-header">
+        <div class="header-background"></div>
+        <div class="animated-bg">
+          <div class="wave wave-1"></div>
+          <div class="wave wave-2"></div>
+          <div class="wave wave-3"></div>
+        </div>
+        <h1 class="card-fullname">Роман</h1>
+        <p class="card-jobtitle">Frontend Developer</p>
+        <div class="card-experience">
+          <span class="experience-badge">
+            <i class="fas fa-rocket"></i>
+            2+ года опыта
+          </span>
+          <div class="experience-bar">
+            <div class="experience-progress" data-level="85"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="card-main">
+        <!-- Секция "Обо мне" -->
+        <section class="card-section is-active" id="about" aria-labelledby="about-title">
+          <div class="card-content">
+            <h2 class="card-subtitle" id="about-title">
+              <i class="fas fa-user-circle subtitle-icon"></i>
+              Обо мне
+            </h2>
+            <p class="card-desc">Фронтенд-разработчик, создаю интуитивные интерфейсы. Превращаю сложные задачи в
+              элегантные решения. Для меня код — это забота о пользовательском опыте.</p>
+
+            <div class="skills-section">
+              <div class="skills-header">
+                <h3 class="skills-title">
+                  <i class="fas fa-code skills-icon"></i>
+                  Ключевые навыки
+                </h3>
+                <button class="skills-toggle" aria-label="Показать все навыки">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+              </div>
+              <div class="skills-list">
+                <span class="skill-tag" data-skill="95">
+                  <i class="fab fa-html5"></i>
+                  HTML5
+                </span>
+                <span class="skill-tag" data-skill="90">
+                  <i class="fab fa-css3-alt"></i>
+                  CSS3
+                </span>
+                <span class="skill-tag" data-skill="85">
+                  <i class="fab fa-js"></i>
+                  JavaScript
+                </span>
+                <span class="skill-tag" data-skill="88">
+                  <i class="fas fa-mobile-alt"></i>
+                  Адаптивная верстка
+                </span>
+                <span class="skill-tag" data-skill="80">
+                  <i class="fas fa-paint-brush"></i>
+                  UI/UX
+                </span>
+                <span class="skill-tag" data-skill="75">
+                  <i class="fab fa-react"></i>
+                  React
+                </span>
+                <span class="skill-tag" data-skill="70">
+                  <i class="fab fa-git-alt"></i>
+                  Git
+                </span>
+                <span class="skill-tag" data-skill="65">
+                  <i class="fas fa-tools"></i>
+                  Vite
+                </span>
+              </div>
+            </div>
+
+            <div class="interactive-stats">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-value" data-count="24">0</span>
+                  <span class="stat-label">Проектов</span>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-value" data-count="500">0</span>
+                  <span class="stat-label">Часов кода</span>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-value" data-count="18">0</span>
+                  <span class="stat-label">Довольных клиентов</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-social">
+            <p class="social-title">
+              <i class="fas fa-share-alt"></i>
+              Связаться со мной:
+            </p>
+            <div class="social-links">
+              <a class="card-social-link social-telegram" href="https://t.me/hotjazza" aria-label="Telegram"
+                target="_blank" rel="noopener noreferrer" data-social="telegram">
+                <div class="social-icon-wrapper">
+                  <i class="fab fa-telegram"></i>
+                </div>
+                <span class="social-label">Telegram</span>
+                <span class="social-hint">Быстрый ответ</span>
+              </a>
+              <a class="card-social-link social-kwork" href="https://kwork.ru/user/frontendspecialist"
+                aria-label="Kwork" target="_blank" rel="noopener noreferrer" data-social="kwork">
+                <div class="social-icon-wrapper">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <span class="social-label">Kwork</span>
+                <span class="social-hint">Заказы</span>
+              </a>
+              <a class="card-social-link social-github" href="https://github.com/specSach" aria-label="GitHub"
+                target="_blank" rel="noopener noreferrer" data-social="github">
+                <div class="social-icon-wrapper">
+                  <i class="fab fa-github"></i>
+                </div>
+                <span class="social-label">GitHub</span>
+                <span class="social-hint">Проекты</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Секция "Опыт" -->
+        <section class="card-section" id="experience" aria-labelledby="experience-title">
+          <div class="card-content">
+            <h2 class="card-subtitle" id="experience-title">
+              <i class="fas fa-briefcase subtitle-icon"></i>
+              Путь в разработке
+            </h2>
+
+            <div class="timeline-controls">
+              <button class="timeline-nav prev-year" aria-label="Предыдущий год">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="timeline-years">
+                <span class="year active" data-year="2023">2023</span>
+                <span class="year" data-year="2024">2024</span>
+                <span class="year" data-year="2025">2025</span>
+              </div>
+              <button class="timeline-nav next-year" aria-label="Следующий год">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="card-timeline">
+              <article class="card-item active" data-year="2023">
+                <div class="timeline-dot">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3 class="card-item-title">Знакомство с разработкой</h3>
+                    <span class="timeline-badge">Начало</span>
+                  </div>
+                  <p class="card-item-desc">Изучал основы верстки и JavaScript, создавал первые проекты. Освоил HTML5,
+                    CSS3 и базовый JavaScript. Выполнил 5 учебных проектов.</p>
+                  <div class="timeline-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                  </div>
+                  <div class="timeline-progress">
+                    <div class="progress-bar" style="width: 40%"></div>
+                    <span class="progress-text">40% пути</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-item" data-year="2024">
+                <div class="timeline-dot">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3 class="card-item-title">Углубление знаний</h3>
+                    <span class="timeline-badge">Развитие</span>
+                  </div>
+                  <p class="card-item-desc">Изучил продвинутые техники верстки, освоил React и современные инструменты
+                    разработки. Работал над 12 реальными проектами.</p>
+                  <div class="timeline-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Sass</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Vite</span>
+                  </div>
+                  <div class="timeline-progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                    <span class="progress-text">75% пути</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-item" data-year="2025">
+                <div class="timeline-dot">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3 class="card-item-title">Профессиональный рост</h3>
+                    <span class="timeline-badge">Текущий</span>
+                  </div>
+                  <p class="card-item-desc">Работаю на фрилансе, выполняю разнообразные задачи от верстки до full-stack
+                    разработки. Участвую в коммерческих проектах.</p>
+                  <div class="timeline-tech">
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Node.js</span>
+                  </div>
+                  <div class="timeline-progress">
+                    <div class="progress-bar" style="width: 95%"></div>
+                    <span class="progress-text">95% пути</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="achievements">
+              <h3 class="achievements-title">
+                <i class="fas fa-trophy"></i>
+                Достижения
+              </h3>
+              <div class="achievements-list">
+                <div class="achievement">
+                  <i class="fas fa-medal"></i>
+                  <span>15+ выполненных проектов</span>
+                </div>
+                <div class="achievement">
+                  <i class="fas fa-star"></i>
+                  <span>Рейтинг 5/5 на Kwork</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Секция "Контакты" -->
+        <section class="card-section" id="contact" aria-labelledby="contact-title">
+          <div class="card-content">
+            <h2 class="card-subtitle" id="contact-title">
+              <i class="fas fa-envelope subtitle-icon"></i>
+              Контакты
+            </h2>
+
+            <div class="contact-info">
+              <div class="contact-item" data-contact="telegram">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-paper-plane contact-icon"></i>
+                  <div class="contact-pulse"></div>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">Telegram</p>
+                  <p class="contact-value">@hotjazza</p>
+                  <button class="contact-copy" data-text="@hotjazza">
+                    <i class="far fa-copy"></i>
+                    Скопировать
+                  </button>
+                </div>
+                <div class="contact-status">
+                  <i class="fas fa-bolt"></i>
+                  <span>Онлайн</span>
+                </div>
+              </div>
+
+              <div class="contact-item" data-contact="location">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">Локация</p>
+                  <p class="contact-value">Удалённо / Россия</p>
+                  <div class="timezone">
+                    <i class="far fa-clock"></i>
+                    <span>МСК (UTC+3)</span>
+                  </div>
+                </div>
+                <div class="contact-status">
+                  <i class="fas fa-globe"></i>
+                  <span>Доступен</span>
+                </div>
+              </div>
+
+              <div class="contact-item" data-contact="schedule">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-calendar-alt contact-icon"></i>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">Расписание</p>
+                  <p class="contact-value">Пн-Пт, 10:00-19:00</p>
+                  <div class="schedule-indicator">
+                    <div class="schedule-dot mon"></div>
+                    <div class="schedule-dot tue"></div>
+                    <div class="schedule-dot wed"></div>
+                    <div class="schedule-dot thu"></div>
+                    <div class="schedule-dot fri"></div>
+                    <div class="schedule-dot sat"></div>
+                    <div class="schedule-dot sun"></div>
+                  </div>
+                </div>
+                <div class="contact-status">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Работаю</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="action-buttons">
+              <a href="https://t.me/hotjazza" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-paper-plane"></i>
+                <span class="btn-text">Написать в Telegram</span>
+                <span class="btn-hint">Ответ в течение 30 минут</span>
+              </a>
+            </div>
+
+            <div class="availability">
+              <div class="availability-status">
+                <div class="pulse-ring"></div>
+                <i class="fas fa-circle availability-dot"></i>
+                <span class="availability-text">Доступен для новых проектов</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Навигация -->
+        <nav class="card-navigation" aria-label="Навигация по разделам портфолио">
+          <button class="nav-btn is-active" data-section="#about" aria-label="Раздел 'Обо мне'" aria-current="page">
+            <div class="nav-icon">
+              <i class="fas fa-user"></i>
+              <span class="nav-notification" data-count="3"></span>
+            </div>
+            <span class="nav-label">Обо мне</span>
+            <div class="nav-indicator"></div>
+          </button>
+          <button class="nav-btn" data-section="#experience" aria-label="Раздел 'Опыт работы'">
+            <div class="nav-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <span class="nav-label">Опыт</span>
+            <div class="nav-indicator"></div>
+          </button>
+          <button class="nav-btn" data-section="#contact" aria-label="Раздел 'Контакты'">
+            <div class="nav-icon">
+              <i class="fas fa-envelope"></i>
+              <span class="nav-notification" data-count="1"></span>
+            </div>
+            <span class="nav-label">Контакты</span>
+            <div class="nav-indicator"></div>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Индикатор загрузки -->
+      <div class="loading-indicator" aria-hidden="true">
+        <div class="loading-spinner">
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-center"></div>
+        </div>
+      </div>
+
+      <!-- Прогресс скролла -->
+      <div class="scroll-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Уведомления -->
+  <div class="notification" id="notification" aria-live="polite">
+    <div class="notification-content">
+      <i class="notification-icon"></i>
+      <span class="notification-text"></span>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

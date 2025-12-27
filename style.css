@@ -112,61 +112,6 @@ body {
   }
 }
 
-/* Переключатель темы */
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 60px;
-  height: 30px;
-  background: var(--bg-card);
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: var(--shadow);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5px;
-  transition: var(--transition);
-}
-
-.theme-toggle:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
-}
-
-.theme-toggle i {
-  font-size: 14px;
-  color: var(--text-secondary);
-  z-index: 2;
-  transition: color 0.3s ease;
-}
-
-.theme-toggle .fa-sun {
-  color: #ff9800;
-}
-
-.theme-toggle .fa-moon {
-  color: #516acc;
-}
-
-.theme-toggle-circle {
-  position: absolute;
-  left: 4px;
-  width: 22px;
-  height: 22px;
-  background: var(--gradient);
-  border-radius: 50%;
-  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: 1;
-}
-
-[data-theme="dark"] .theme-toggle-circle {
-  transform: translateX(30px);
-}
-
 /* Фоновые эффекты */
 .background-effects {
   position: fixed;
@@ -2116,11 +2061,6 @@ body {
     padding: 12px;
   }
 
-  .theme-toggle {
-    top: 15px;
-    right: 15px;
-  }
-
   .quick-actions {
     right: 15px;
     bottom: 15px;
@@ -2431,22 +2371,6 @@ body {
     font-size: 0.8rem;
   }
 
-  .theme-toggle {
-    width: 55px;
-    height: 28px;
-    top: 10px;
-    right: 10px;
-  }
-
-  .theme-toggle-circle {
-    width: 20px;
-    height: 20px;
-  }
-
-  [data-theme="dark"] .theme-toggle-circle {
-    transform: translateX(27px);
-  }
-
   .quick-actions {
     right: 10px;
     bottom: 10px;
@@ -2520,20 +2444,6 @@ body {
   .nav-btn {
     padding: 10px 3px;
     min-height: 55px;
-  }
-
-  .theme-toggle {
-    width: 50px;
-    height: 25px;
-  }
-
-  .theme-toggle-circle {
-    width: 18px;
-    height: 18px;
-  }
-
-  [data-theme="dark"] .theme-toggle-circle {
-    transform: translateX(25px);
   }
 }
 

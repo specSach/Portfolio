@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".card-section");
   const card = document.querySelector(".card");
   const notification = document.getElementById("notification");
-  const themeToggle = document.querySelector(".theme-toggle");
   const avatarModal = document.getElementById("avatarModal");
   const modalClose = document.querySelector(".modal-close");
   const avatarZoom = document.querySelector(".avatar-zoom");
@@ -455,9 +454,6 @@ document.addEventListener("DOMContentLoaded", function () {
         switchSection(sectionId);
       });
     });
-
-    // Переключение темы
-    themeToggle.addEventListener("click", toggleTheme);
 
     // Инициализация частиц
     initParticles();

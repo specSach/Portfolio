@@ -1231,6 +1231,8 @@ body {
 }
 
 .contact-icon {
+  left: 12px;
+  top: 13px;
   font-size: 1.5rem;
   color: var(--primary-color);
   position: relative;
